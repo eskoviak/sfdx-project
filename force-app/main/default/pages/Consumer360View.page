@@ -1,0 +1,9 @@
+<apex:page controller="Consumer360ViewController">
+    <apex:form>
+        <apex:pageBlock title="Consumer 360 View">
+            <apex:pageBlockSection>
+                
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

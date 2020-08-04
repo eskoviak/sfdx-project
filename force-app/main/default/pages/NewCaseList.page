@@ -1,0 +1,19 @@
+<apex:page controller="NewCaseListController">
+    <apex:form>
+        <apex:pageBlock title="New Cases" id="id_newCases">
+            <table border="0">
+                <tr>
+                    <th>Id</th>
+                    <th>Case Number</th>
+                </tr>
+    
+                <apex:repeat var="case" value="{! newCases}" id="id_repeat">
+                    <tr>
+                        <td><apex:outputLink value="https://cunning-fox-n4g3bc-dev-ed.lightning.force.com/lightning/r/Case/{!case.Id}/view">{!case.Id}</apex:outputLink></td>
+                        <td>{!case.CaseNumber}</td>
+                    </tr>
+                </apex:repeat>
+            </table>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
